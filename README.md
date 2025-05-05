@@ -44,7 +44,7 @@ Additionally, we have added dependencies for JWT also. Below are the dependencie
 
 ____________________________________________
 
-**STEP** **2** : Create Entity Classes
+**STEP** **2** **: Create Entity Classes**
 
 Go to the src > main > java > entity and create a class UserInfo and put the below code.
 
@@ -78,7 +78,7 @@ public class AuthRequest {
 
 ____________________________________________
 
-**STEP** **3** : Create a Repository Interface
+**STEP** **3** **: Create a Repository Interface**
 
 Go to the src > main > java > repository and create an interface UserInfoRepository and put the below code.
 
@@ -90,7 +90,7 @@ public interface UserInfoRepository extends JpaRepository<UserInfo, Integer> {
 
 _______________________________________
 
-**STEP** **4** : Create Service Classes
+**STEP** **4** **: Create Service Classes**
 
 Go to the src > main > java > service and create a class JwtService and put the below code.
 
@@ -237,7 +237,7 @@ public class UserInfoService implements UserDetailsService {
 
 _________________________________________________
 
-**STEP** **5** : Create Filter Class
+**STEP** **5** **: Create Filter Class**
 
 Go to the src > main > java > filter and create a class JwtAuthFilter and put the below code.
 
@@ -281,8 +281,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 ___________________________________________
 
-**STEP** **6** : Create a SecurityConfig Class
-
+**STEP** **6** : **Create a SecurityConfig Class**
 Go to the src > main > java > config and create a class SecurityConfig and put the below code. This is the new changes brought in Spring Boot 3.0.
 
 @Configuration
@@ -343,7 +342,7 @@ public class SecurityConfig {
 
 _______________________________________________
 
-**STEP** **7** : Create a UserController
+**STEP** **7** **: Create a UserController**
 
 Go to the src > main > java > controller and create a class UserController and put the below code. In this, we have created a simple REST API in our controller class.
 
